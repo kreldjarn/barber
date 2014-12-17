@@ -1,13 +1,29 @@
-.barberpole {
-    width:   40px;
-    height:  100%;
-    border:  1px solid black;
+body {
+    height: 100%;
     padding: 0;
-    margin:  0 auto;
+    margin: 0;
+    background-color: #444;
+}
+
+.logo {
+    margin: 0 auto;
+    display: block;
+    z-index: 10;
+    height: 300px;
+}
+
+.barberpole {
+    background-color: #FFF;
+    width: 40px;
+    height: 100%;
+    padding: 0;
+    margin: -300px auto 0 auto;
+    z-index: 1;
 }
 
 
 .barberpole-shadow {
+    z-index: 3;
     height: 100%;
     width: 100%;
     margin: 0 3px;
@@ -25,6 +41,7 @@
 
 
 .barberpole-glow {
+    z-index: 3;
     height: 100%;
     width: 100%;
     margin: 0 3px;
@@ -42,6 +59,7 @@
 
 
 .stripes {
+    z-index: 2;
     position: relative;
     background-size: 60px 60px;
     background-image: linear-gradient(
