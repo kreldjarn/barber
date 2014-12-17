@@ -1,0 +1,49 @@
+.barberpole {
+    width:   50px;
+    height:  100%;
+    border:  1px solid black;
+    padding: 0;
+    margin:  0 auto;
+}
+
+.stripes {
+    background-size: 60px 60px;
+    background-image: linear-gradient(
+        45deg, 
+        #A00            20%, 
+        transparent     20%, 
+        transparent     50%, 
+        #A00            50%, 
+        #A00            70%, 
+        transparent     70%, 
+        transparent
+    );
+    -webkit-animation: barberpole 1s linear infinite;
+    -moz-animation:    barberpole 1s linear infinite;
+    -o-animation:      barberpole 1s linear infinite;
+    animation:         barberpole 1s linear infinite;
+    height: 100%;
+    width:  100%;
+}
+
+
+@keyframes barberpole {
+	from { background-position: 0 0; }
+	to   { background-position: 120px 60px; }
+}
+@-moz-keyframes barberpole {
+	from { background-position: 0 0; }
+	to   { background-position: 120px 60px; }
+}
+@-webkit-keyframes barberpole {
+	from { background-position: 0 0; }
+	to   { background-position: 120px 60px; }
+}
+@-ms-keyframes barberpole {
+	from { background-position: 0 0; }
+	to   { background-position: 120px 60px; }
+}
+@-o-keyframes barberpole {
+	from { background-position: 0 0; }
+	to   { background-position: 120px 60px; }
+}
